@@ -74,7 +74,7 @@ Sum of first 10 natural numbers is: 55
 - Initialize the first two Fibonacci numbers (0 and 1).
 - Use a loop to generate the next terms using the formula `c = a + b`.
 - Print each term in the series.
-  ```
+- ```
   DECLARE
     n NUMBER := 7;
     a NUMBER := 0;
@@ -93,16 +93,13 @@ BEGIN
 
     DBMS_OUTPUT.NEW_LINE;
 END;
-/
-```
+/```
 
 **Expected Output:**  
 n = 7  
 Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8
 
 <img width="961" height="682" alt="image" src="https://github.com/user-attachments/assets/5ee1cf62-1b5b-47c8-a593-5e2bd5d33cf3" />
-
----
 
 ## 4. Write a PL/SQL Program to display the number in Reverse Order
 
