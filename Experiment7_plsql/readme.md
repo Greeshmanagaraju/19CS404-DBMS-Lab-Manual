@@ -74,7 +74,7 @@ Sum of first 10 natural numbers is: 55
 - Initialize the first two Fibonacci numbers (0 and 1).
 - Use a loop to generate the next terms using the formula `c = a + b`.
 - Print each term in the series.
-- ```
+ ```
   DECLARE
     n NUMBER := 7;
     a NUMBER := 0;
@@ -93,7 +93,9 @@ BEGIN
 
     DBMS_OUTPUT.NEW_LINE;
 END;
-/```
+/
+```
+
 
 **Expected Output:**  
 n = 7  
