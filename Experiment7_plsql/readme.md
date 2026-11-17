@@ -158,10 +158,27 @@ Reversed number is 5351
 - Declare three numeric variables `a`, `b`, and `c`.
 - Use nested `IF-ELSIF-ELSE` conditions to find the largest among the three.
 - Display the largest number.
-
+```
+DECLARE
+    a NUMBER := 10;
+    b NUMBER := 9;
+    c NUMBER := 15;
+BEGIN
+    IF (a > b) AND (a > c) THEN
+        DBMS_OUTPUT.PUT_LINE('Largest of three numbers is ' || a);
+    ELSIF (b > a) AND (b > c) THEN
+        DBMS_OUTPUT.PUT_LINE('Largest of three numbers is ' || b);
+    ELSE
+        DBMS_OUTPUT.PUT_LINE('Largest of three numbers is ' || c);
+    END IF;
+END;
+/
+```
 **Expected Output:**  
 a = 10, b = 9, c = 15  
 Largest of three number is 15
+<img width="936" height="632" alt="image" src="https://github.com/user-attachments/assets/6bfc9d35-1b66-45c9-9e27-3b7043c685a7" />
+
 
 ## RESULT
 Thus, the PL/SQL programs using variables, conditionals, and loops were executed successfully.
