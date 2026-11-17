@@ -127,10 +127,28 @@ Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8
 - Declare a variable `n` and assign a value (e.g., 1535).
 - Use a loop to extract each digit using modulo and reverse the number.
 - Display the reversed number.
+```
+DECLARE
+    n NUMBER := 1535;
+    rev NUMBER := 0;
+    digit NUMBER;
+
+BEGIN
+    WHILE n > 0 LOOP
+        digit := MOD(n, 10);
+        rev := rev * 10 + digit;
+        n := TRUNC(n / 10);
+    END LOOP;
+
+    DBMS_OUTPUT.PUT_LINE('Reversed number is: ' || rev);
+END;
+/
+```
 
 **Expected Output:**  
 n = 1535  
 Reversed number is 5351
+<img width="939" height="646" alt="image" src="https://github.com/user-attachments/assets/b7293384-cdd9-4b92-8e18-948e2e7a3a9e" />
 
 ---
 
