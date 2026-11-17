@@ -33,9 +33,24 @@ END;
 - Declare two numeric variables and initialize them.
 - Use an `IF` statement to compare the values.
 - Display the greater number using `DBMS_OUTPUT.PUT_LINE`.
+```
+DECLARE
+    a NUMBER :=&a;
+    b NUMBER :=&b;
 
+BEGIN
+    IF a > b THEN
+        DBMS_OUTPUT.PUT_LINE('Greatest number is: ' || a);
+    ELSE
+        DBMS_OUTPUT.PUT_LINE('Greatest number is: ' || b);
+    END IF;
+END;
+/
+```
 **Expected Output:**  
 Greater number is: 80
+<img width="914" height="674" alt="image" src="https://github.com/user-attachments/assets/fa5be983-0e6d-4790-a3a2-30df6a00ae36" />
+
 
 ---
 
@@ -59,10 +74,33 @@ Sum of first 10 natural numbers is: 55
 - Initialize the first two Fibonacci numbers (0 and 1).
 - Use a loop to generate the next terms using the formula `c = a + b`.
 - Print each term in the series.
+  ```
+  DECLARE
+    n NUMBER := 7;
+    a NUMBER := 0;
+    b NUMBER := 1;
+    c NUMBER;
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('Fibonacci sequence:');
+
+    FOR i IN 1..n LOOP
+        DBMS_OUTPUT.PUT(a || ' ');
+
+        c := a + b;
+        a := b;
+        b := c;
+    END LOOP;
+
+    DBMS_OUTPUT.NEW_LINE;
+END;
+/
+```
 
 **Expected Output:**  
 n = 7  
 Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8
+
+<img width="961" height="682" alt="image" src="https://github.com/user-attachments/assets/5ee1cf62-1b5b-47c8-a593-5e2bd5d33cf3" />
 
 ---
 
