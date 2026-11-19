@@ -61,7 +61,7 @@ VALUES (101, 'Alice', 'HR', 50000);
 SELECT * FROM employee_log;
 
 ```
-![image](https://github.com/user-attachments/assets/9eb5657c-b738-42f7-b89d-d8d3ec82c7d9)
+<img width="923" height="164" alt="image" src="https://github.com/user-attachments/assets/1ed0c8f5-f172-4f26-8f53-e04398be980f" />
 
 ---
 
