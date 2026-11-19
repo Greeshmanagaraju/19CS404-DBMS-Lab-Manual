@@ -208,8 +208,8 @@ VALUES (1, 'John Doe', 2500);
 INSERT INTO employee (emp_id, emp_name, salary)
 VALUES (2, 'Jane Smith', 4000);
 ```
+<img width="951" height="450" alt="image" src="https://github.com/user-attachments/assets/7eb8ae71-0fd5-4588-a79d-eba98df30947" />
 
-![image](https://github.com/user-attachments/assets/5545c56f-851d-4bd5-bf0f-750a86fc8b34)
 
 ## RESULT
 Thus, the PL/SQL trigger programs were written and executed successfully.
